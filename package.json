@@ -34,7 +34,10 @@
       "src/main.js"
     ],
     "all": true,
-    "reporter": "lcov",
+    "reporter": [
+      "lcov",
+      "text"
+    ],
     "report-dir": "./build/coverage",
     "lines": 90,
     "check-coverage": true
