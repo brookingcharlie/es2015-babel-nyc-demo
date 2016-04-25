@@ -30,7 +30,7 @@ nyc options can be provided on the command line or via JSON as shown below.
 
 In our case, we configure a number of options:
 
-* Using the `require` options, we pull in `babel-core/register` to dynamically
+* Using the `require` option, we pull in `babel-core/register` to dynamically
   apply Babel code transpilation on each require/import.
   We also also require `babel-polyfill` to ensure all ES2015 features are
   available at runtime.
@@ -45,11 +45,11 @@ In our case, we configure a number of options:
 
 * We enable two different test reports using the `reporter` option:
   an "lcov" HTML report, output under `build/coverage/` according to the
-  `report-dir` option) and a "text" report, which is output to the console.
+  `report-dir` option; and a "text" report, which is output to the console.
 
 * We configure a minimum line coverage of 90% by setting the `lines` option and
-  enable `check-coverage` so that the `nyc` command returns an exit status if
-  this coverage falls below this point.
+  enabling `check-coverage` so that the `nyc` command returns an exit status if
+  coverage falls below this point.
 
 ```
 {
